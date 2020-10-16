@@ -1,0 +1,162 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>AgroQuality</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./index.js"></script>
+  </body>
+</html> -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>AgroQuality</title>
+  </head>
+  <body>
+
+    <table class="table">
+        <thead>
+            <tr>
+            <th scope="col">Leves</th>
+            <th scope="col">Menores</th>
+            <th scope="col">Mayores</th>
+            <th scope="col">Heridas</th>
+            <th scope="col">Palo largo</th>
+            <th scope="col">Arrancado</th>
+            <th scope="col">Oleo</th>
+            <th scope="col">Cancro</th>
+            <th scope="col">Mancha</th>
+            <th scope="col">Melanosis</th>
+            <th scope="col">Ramaleo</th>
+            <th scope="col">Botritys</th>
+            <th scope="col">Chico</th>
+            <th scope="col">Verde</th>
+            <th scope="col">Grande</th>
+            <th scope="col">Otros</th>
+            </tr>
+        </thead>
+        <tbody id="muestreo">
+
+        </tbody>
+        </table>
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-success d-flex flex-wrap align-content-center" data-toggle="modal" data-target="#exampleModal">
+        Agregar
+      </button>
+      
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Muestreo de fruta de finca</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Leves</label>
+                            <input type="text" class="form-control" id="leves" placeholder="Leves">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Menores</label>
+                            <input type="text" class="form-control" id="menores" placeholder="Menores">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Mayores</label>
+                            <input type="text" class="form-control" id="mayores" placeholder="Mayores">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Heridas</label>
+                            <input type="text" class="form-control" id="heridas" placeholder="heridas">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Palo largo</label>
+                            <input type="text" class="form-control" id="palolargo" placeholder="palo largo">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Arrancado</label>
+                            <input type="text" class="form-control" id="arrancado" placeholder="arrancado">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Oleo</label>
+                            <input type="text" class="form-control" id="oleo" placeholder="Oleo">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Cancro</label>
+                            <input type="text" class="form-control" id="cancro" placeholder="Cancro">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Mancha negra</label>
+                            <input type="text" class="form-control" id="manchanegra" placeholder="Mancha negra">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Melanosis</label>
+                            <input type="text" class="form-control" id="melanosis" placeholder="Melanosis">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Ramaleo</label>
+                            <input type="text" class="form-control" id="ramaleo" placeholder="ramaleo">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Botritys</label>
+                            <input type="text" class="form-control" id="botritys" placeholder="botritys">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Chico</label>
+                            <input type="text" class="form-control" id="chico" placeholder="chico">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Verde</label>
+                            <input type="text" class="form-control" id="verde" placeholder="verde">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Grande</label>
+                            <input type="text" class="form-control" id="grande" placeholder="grande">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Otros</label>
+                            <input type="text" class="form-control" id="otros" placeholder="otros">
+                        </div>
+                    </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+              <button type="button" class="btn btn-success" onclick="agregarNuevo()" data-dismiss="modal">Agregar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+        
+
+    <!-- Optional JavaScript -->
+    <script src="index.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
